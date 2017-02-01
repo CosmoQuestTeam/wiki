@@ -1,0 +1,2 @@
+# wiki
+CosmoQuest github wiki
