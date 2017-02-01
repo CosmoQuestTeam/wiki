@@ -1,12 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to the CosmoQuest Github Wiki
 
-You can use the [editor on GitHub](https://github.com/CosmoQuestTeam/wiki/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This wiki contains instructions for accessing the CosmoQuest github repositories. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Git Repositories
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The two primary repositories are [cosmoquest](https://github.com/CosmoQuestTeam/cosmoquest) and [cosmoquest-wordpress](https://github.com/CosmoQuestTeam/cosmoquest-wordpress).  Both are currently only viewable via CosmoQuestTeam Github members. 
 
 ```markdown
 Syntax highlighted code block
