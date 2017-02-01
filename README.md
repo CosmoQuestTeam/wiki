@@ -1,36 +1,26 @@
 ## Welcome to the CosmoQuest Github Wiki
 
-This wiki contains instructions for accessing the CosmoQuest github repositories. 
+This wiki contains instructions for accessing the CosmoQuest github repositories.
 
 
 ### Git Repositories
 
-The two primary repositories are [cosmoquest](https://github.com/CosmoQuestTeam/cosmoquest) and [cosmoquest-wordpress](https://github.com/CosmoQuestTeam/cosmoquest-wordpress).  Both are currently only viewable via CosmoQuestTeam Github members. 
+The two primary repositories are [cosmoquest](https://github.com/CosmoQuestTeam/cosmoquest) and [cosmoquest-wordpress](https://github.com/CosmoQuestTeam/cosmoquest-wordpress).  Both are currently only viewable via CosmoQuestTeam Github members.
 
-```markdown
-Syntax highlighted code block
+### Branches
 
-# Header 1
-## Header 2
-### Header 3
+All repositories have both a _master_ and _develop_ branch. The _develop_ branch is used as a staging area for the project.  Development of new code, both new features and long term bug fixes, should be placed in the _develop_ branch.  When code in the _develop_ branch is considered ready to be on the live server, a pull request  **must** be created so that the changes can be viewed and discussed with all development team members. For more information on creating pull requests on Github, please check the [Github Documentation](https://help.github.com/articles/creating-a-pull-request/).
 
-- Bulleted
-- List
+The _master_ branch contains code that is running on the live site. Code **must** be considered stable and ready for production before it is pulled into the _master_ branch.
 
-1. Numbered
-2. List
+#### Live Fixes
 
-**Bold** and _Italic_ and `Code` text
+In the event that live fixes are necessary, they are to be places in the _livefixes_ branch. This branch comes from the _master_ branch directly.  In order to effectively use the _livefixes_ branch we **must** follow the following procedure.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CosmoQuestTeam/wiki/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. If the _livefixes_ branch **does not** already exist, create a new branch off of the _master_ branch. **Otherwise**, checkout the _livefixes_ branch and pull the latest version of _master_ onto it.
+2. Push the changes from 1 onto Github (the origin/livefixes branch).
+3. Make any changes that are necessary and commit them.
+4. When all changes are made, push them to the _livefixes_ branch.
+5. Issue a pull request to add the fixes to the _master_ branch.
+6. **If** the changes are approved for the _master_ branch, switch to the _develop_ branch and pull the changes from _livefixes_ onto it.
+7. Ensure **all** members of the development team are aware of the live fixes so that they can be incorporated into permanent changes.
