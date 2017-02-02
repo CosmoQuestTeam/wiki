@@ -38,5 +38,17 @@ If team members are currently on the _master_ branch then they should **immediat
 ![vcs_git_branches](images/vcs_git_branches.png)
 2.  From this window select _origin/develop_ and in the second pop-up window select checkout new local branch.
 ![git_branches_checkout_new_local](images/git_branches_checkout_new_local.png)
-3.  To confirm what branch you are currently on, use the Git notification in the bottom right of the task bar. The branch name is displayed as Git: _branchname_ as well as being displayed when hovered over. 
+3.  To confirm what branch you are currently on, use the Git notification in the bottom right of the task bar. The branch name is displayed as Git: _branchname_ as well as being displayed when hovered over.
 ![git_notification_taskbar](images/git_notification_taskbar.png)
+
+#### System or Git Shell
+The system shell (usually Bash on Linux or TSCH on MacOS) as well as the Git Shell (Windows) can be used to manage git repositories manually.
+
+1. From within the repository directory (in my case /home/ryan/cosmoquest) use the **git fetch** command to update your local repositories list of branches.
+![git_fetch](images/git_fetch.png)
+2. To confirm what branch you are currently on, use the **git branch** command.  It will display the branch you have checked out in green with a * in front of the name. In the image bellow, only the _master_ branch has been checked out locally.
+![git_branch_master](images/git_branch_master.png)
+3. In order to be on the _develop_ branch, you must checkout the remote _origin/develop_ branch as a new local branch.  To do so with git &ge; 1.6.6, use the **git checkout** command.
+![git_checkout_develop](images/git_checkout_develop.png)
+4. Finally, confirm you are on the develop branch by using the **git branch** command. The _develop_ branch should be green and have a * in front of the name.
+![git_branch_develop](images/git_branch_develop.png)
