@@ -42,7 +42,7 @@ If team members are currently on the _master_ branch then they should **immediat
 ![git_notification_taskbar](images/git_notification_taskbar.png)
 
 #### System or Git Shell
-The system shell (usually Bash on Linux or TSCH on MacOS) as well as the Git Shell (Windows) can be used to manage git repositories manually.
+The system shell (usually Bash on Linux or TCSH on MacOS) as well as the Git Shell (Windows) can be used to manage git repositories manually.
 
 1. From within the repository directory (in my case /home/ryan/cosmoquest) use the **git fetch** command to update your local repositories list of branches.
 ![git_fetch](images/git_fetch.png)
